@@ -6,7 +6,7 @@ import pyautogui as robot
 eye_model = cv2.CascadeClassifier("haarcascade_eye.xml")
 face_model = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
-# 
+
 loop = True
 cam = cv2.VideoCapture(0)
 
