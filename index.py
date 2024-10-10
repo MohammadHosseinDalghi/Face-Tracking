@@ -6,13 +6,12 @@ import pyautogui as robot
 eye_model = cv2.CascadeClassifier("haarcascade_eye.xml")
 face_model = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
+def face_detect(face_model, eye_model):
+    loop = True
+    cam = cv2.VideoCapture(0)
 
-loop = True
-cam = cv2.VideoCapture(0)
-
-def face_detect(loop, camera, face_model, eye_model):
     while loop:
-        _, img = camera.read()
+        _, img = cam.read()
         # We used the `flip` to show us the image like a mirror.
         img = cv2.flip(img, 1)
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -62,4 +61,3 @@ def face_detect(loop, camera, face_model, eye_model):
 
         out2 = cv2.rectangle(imgout, (400,100),(900,600),color,2)
 
-face_detect(loop, cam, face_model, eye_model)
