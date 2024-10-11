@@ -16,7 +16,7 @@ This project demonstrates face and eye detection using OpenCV's Haar Cascade mod
 5. I also put the Jupyter format for better experience.
 
 ## Requirements
-- Python 3.10.11
+- Python 3.x (I used 3.10.11)
 - OpenCV (`cv2`)
 - PyAutoGUI (`pyautogui`)
 - A webcam
@@ -31,7 +31,8 @@ This project demonstrates face and eye detection using OpenCV's Haar Cascade mod
 
 2. Install the required Python libraries:
     ```bash
-    pip install opencv-python pyautogui
+    pip install opencv-python
+    pip install pyautogui
     ```
 
 3. Ensure that the Haar Cascade XML files for face and eye detection are in the project directory:
