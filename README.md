@@ -42,3 +42,17 @@ This project demonstrates face and eye detection using OpenCV's Haar Cascade mod
     ```bash
     python face_eye_detection.py
     ```
+
+## Usage
+- The face and eye models will detect your face and eyes in real-time.
+- Move your face around the screen. If your face goes outside the designated region, the mouse will automatically move to match the direction of your head movement.
+
+## Customization
+- You can adjust the region boundaries for face tracking by changing the values in the `rectangle` command within the code:
+    ```python
+    out2 = cv2.rectangle(imgout, (400,100),(900,600),color,2)
+    ```
+    Here, `(400, 100)` and `(900, 600)` represent the top-left and bottom-right coordinates of the bounding rectangle.
+
+## Contributing
+Feel free to fork this repository, submit issues, or make pull requests to improve the project.
